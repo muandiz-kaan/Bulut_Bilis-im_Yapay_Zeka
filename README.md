@@ -17,18 +17,18 @@ Bu proje, farklı hayvan türlerini sınıflandırmak için geliştirilmiş bir 
 ---
 
 ##  Klasör Yapısı
-  hayvan_siniflandirma/
-  ├── data/
-  │ └── archive/raw-img/ # Eğitim verisi
-  ├── model/
-  │ └── animal_model.keras # Eğitilmiş model
-  ├── src/
-  │ ├── preprocess.py # Veri ön işleme
-  │ └── train.py # Model eğitimi
-  ├── app/
-  │ └── interface.py # Streamlit arayüzü
-  ├── requirements.txt
-  └── README.md
+  yapay_zeka_proje/
+├── app.py
+├── model.py
+├── train.py
+├── utils/
+│   └── preprocessing.py
+├── models/
+│   └── model.pth
+├── dataset/
+│   └── seg_train / seg_test
+├── screenshot.png
+└── README.md
 
  # Veri klasör yapısı tf.keras.utils.image_dataset_from_directory() fonksiyonuna uygun olarak aşağıdaki gibidir:
 
