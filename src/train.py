@@ -18,6 +18,9 @@ model = tf.keras.Sequential([
     tf.keras.layers.Dense(256, activation='relu'),
     tf.keras.layers.Dropout(0.5),  # ✅ Aşırı öğrenmeyi azalt
     tf.keras.layers.Dense(len(class_names), activation='softmax')
+
+
+    
 ])
 
 model.compile(
