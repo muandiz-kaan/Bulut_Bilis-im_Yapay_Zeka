@@ -17,6 +17,7 @@ Bu proje, farklı hayvan türlerini sınıflandırmak için geliştirilmiş bir 
 ---
 
 ##  Klasör Yapısı
+```
   yapay_zeka_proje/
 ├── app.py
 ├── model.py
@@ -29,7 +30,7 @@ Bu proje, farklı hayvan türlerini sınıflandırmak için geliştirilmiş bir 
 │   └── seg_train / seg_test
 ├── screenshot.png
 └── README.md
-
+```
  # Veri klasör yapısı tf.keras.utils.image_dataset_from_directory() fonksiyonuna uygun olarak aşağıdaki gibidir:
 
   raw-img/
