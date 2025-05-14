@@ -18,21 +18,22 @@ Bu proje, farklı hayvan türlerini sınıflandırmak için geliştirilmiş bir 
 
 ##  Klasör Yapısı
 ```
-  yapay_zeka_proje/
-├── app.py
-├── model.py
-├── train.py
-├── utils/
-│   └── preprocessing.py
-├── models/
-│   └── model.pth
-├── dataset/
-│   └── seg_train / seg_test
-├── screenshot.png
+  hayvan_siniflandirma/
+├── app/
+│ └── interface.py # Streamlit arayüzü
+├── data/
+│ └── archive/raw-img/ # Eğitim verisi
+├── model/
+│ ├── animal_model.keras # Eğitilmiş model
+│ └── accuracy_plot.png # Eğitim grafiği (opsiyonel)
+├── src/
+│ ├── preprocess.py # Veri yükleme ve hazırlama
+│ └── train.py # Model eğitimi ve kaydı
+├── requirements.txt
 └── README.md
 ```
  # Veri klasör yapısı tf.keras.utils.image_dataset_from_directory() fonksiyonuna uygun olarak aşağıdaki gibidir:
-
+```
   raw-img/
   ├── cane/
   ├── gatto/
@@ -44,7 +45,7 @@ Bu proje, farklı hayvan türlerini sınıflandırmak için geliştirilmiş bir 
   ├── farfalla/
   ├── ragno/
   └── scoiattolo/
-
+```
 # Projeyi başlatmak için:
 
 streamlit run app/interface.py
