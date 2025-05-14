@@ -46,7 +46,7 @@ raw-img/
 
 # Projeyi başlatmak için:
 
-streamlit run app/interface.pyü
+streamlit run app/interface.py
 
 - Görsel yükleyin veya sürükleyip bırakın.
 - Sistem tahmin sonucunu anında gösterir.
